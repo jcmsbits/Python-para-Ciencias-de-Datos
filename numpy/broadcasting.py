@@ -9,7 +9,7 @@ prices_matrix = np.random.randint(100,500, size = (3,3))
 print("Matrix con precios aleatorios",prices_matrix)
 discount = np.array([10,20,30])
 print("Discount sin forma de matrix", discount)
-discount_prices = prices_matrix + discount
+discount_prices = prices_matrix - discount
 print("Variable modificada en cada fila por el broadcasting: ", discount_prices)
 
 
